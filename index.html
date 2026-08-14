@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .topline{
+            background-color: #4CAF1C;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            height: 50px;
+            padding: 15px;
+            position: sticky;
+        }
+        .rightline{
+            display: flex;
+            gap: 50px;
+        }
+        .greenilog{
+            color: #4CAF1C;
+        }
+        input{
+            border: 1px solid #4CAF1C;
+            color:#4CAF1C;
+            border-radius: 3px 0px 0px 3px;
+            width: 350px;
+            height: 35px;
+            padding: 5px;
+        }
+
+        #btn1{width: 33.2px;
+              height: 33.2px;
+            background-color: #4CAF1C;
+        border: 1px solid #4CAF1C;
+    color: white;}
+    nav{
+         display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 50px;
+            padding: 10px;
+            margin: 10px;
+            align-items: center;
+    }
+    .personal{
+         display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+    }
+    .info{
+        display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 40px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+hr{
+        border: 1px solid #4CAF1C;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background-color: white;
+}
+
+section a {
+    color: #222;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section a:hover {
+    color: #4CAF1C;
+}
+select{
+    background-color: #4CAF1C;
+    color: white;
+    padding: 3px;
+     border: 1px solid #4CAF1C;
+     border-radius: 5px;
+} 
+
+#heroim{
+    height: 500px;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.greeni{
+    color: #4CAF1C;
+    align-self: flex-start;
+    margin: 0px;
+}
+
+/* .hero */
+.hero {
+   
+    background-color: #ebfbe3;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    padding-top: 45px;
+    background-color: #ebfbe3;
+}
+
+.time-delivery {
+    border: 1px solid #4CAF1C;
+    padding: 5px;
+    border-radius: 4px;
+    color: #4CAF1C;
+}
+
+#heading {
+    font-size: 60px;
+    margin: 25px 0 0 0;
+}
+
+#sequence-para {
+    margin-top: 25px;
+    text-align: left;
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+     margin-top: 20px;
+}
+
+
+/* Normal state */
+.shop-btn {
+    background-color: #4CAF1C;
+    color: white;
+    border: 2px solid #4CAF1C;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.offer-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    padding: 10px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+
+/* When either button is hovered, swap both */
+.hero-buttons:has(.shop-btn:hover) .shop-btn,
+.hero-buttons:has(.offer-btn:hover) .offer-btn {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.hero-buttons:has(.shop-btn:hover) .offer-btn,
+.hero-buttons:has(.offer-btn:hover) .shop-btn {
+    background-color: #4CAF1C;
+    color: white;
+    border-color: #4CAF1C;
+}
+.satisfy-line{ 
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 50px;
+  font-size: large;
+  justify-content: space-evenly;
+}
+    </style>
+</head>
+<body>
+    <div class="topline">
+     <div><h4>🥡Free Delivery on orders above Rs. 1,499</h4></div>
+     <div class="rightline">
+        <h4>📦Fast & Fresh Delivery</h4>
+        <h4>🧧 Help Center</h4>
+        <h4>🚚 Track Order</h4>
+     </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+            <h2><i class="fa-solid fa-basket-shopping greenilog"></i>Fresh <span class="greenilog">Basket</span>
+                </h2>
+            <p style="margin-left: 31px; font-size: small;">Fresh Groceries, Delivered.</p> 
+            </div>
+            <div>
+            <input type="text" placeholder="Search for products, categories...">
+            <button id="btn1"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="personal">
+                <p><i class="fa-regular fa-user"></i>Login/Register</p>
+                <p><i class="fa-regular fa-circle-user"></i>My Account</p>
+                <p><i class="fa-solid fa-cart-arrow-down"></i>My Cart</p>
+            </div>
+        </nav>
+        <hr>
+        <section class="info">
+            
+            <select name="categories" id="">
+                <option value="">Shop by Category</option>
+                <option value=""> 🥦 Fruits & Vegetables</option>
+                <option value="">🥛 Dairy & Breakfast</option>
+                <option value="">🌾 Staples & Pulses</option>
+                <option value="">🍪 Snacks & Munchies</option>
+                <option value="">🥤 Beverages</option>
+                <option value="">🧴 Personal Care</option>
+                <option value="">🧹 Household Needs</option>
+                <option value="">🥩 Meat & Seafood</option>
+                <option value="">🧊 Frozen Foods</option>
+                <option value="">🍫 Bakery & Desserts</option>
+                </select>
+      <section class="d-flex justify-content-center align-items-center gap-4 py-3">
+    <a href="#" class="text-dark text-decoration-none">Home</a>
+    <a href="#" class="text-dark text-decoration-none">Categories</a>
+    <a href="#" class="text-dark text-decoration-none">Offers</a>
+    <a href="#" class="text-dark text-decoration-none">Fruits & Vegetables</a>
+    <a href="#" class="text-dark text-decoration-none">Dairy</a>
+    <a href="#" class="text-dark text-decoration-none">Beverages</a>
+    <a href="#" class="text-dark text-decoration-none">Personal Care</a>
+    <a href="#" class="text-dark text-decoration-none">Household</a>
+    <a href="#" class="text-dark text-decoration-none">Contact Us</a>
+</section>   
+        </section>
+    </header>
+    <hr>
+    <section class="hero">
+     <i class="fa-solid fa-grip greenilog" ></i>
+    <div class="hero-content">
+
+        <p class="time-delivery">
+            <i class="fa-solid fa-bolt"></i>
+            60-Minute Delivery
+        </p>
+
+        <h1 id="heading">
+            Fresh Groceries <br>
+            Delivered To <br>
+           <span class="greenilog">Your Door</span> 
+        </h1>
+
+        <p id="sequence-para">
+            Everything you need for your everyday <br>
+            shopping, delivered fresh and fast.
+        </p>
+        <div class="hero-buttons">
+      <button class="shop-btn">Shop Now</button>
+      <button class="offer-btn">View Offer</button>
+      </div>
+      <div class="satisfy-line">
+        <h5><i class="fa-solid fa-barcode greenilog"></i>100% Fresh <br>products</h5><hr>
+        <h5><i class="fa-solid fa-user-lock greenilog"></i>Secure <br>Payment</h5><hr>
+        <h5><i class="fa-solid fa-reply greenilog"></i>Easy <br>Returns</h5>     
+    </div>
+    </div>
+     <i class="fa-solid fa-grip greenilog" ></i>
+    <img src="hero img.png" alt="Fresh groceries" id="heroim" >
+     <i class="fa-solid fa-grip greenilog" ></i>
+    </section>
+    <hr>
+    <section>
+        <h3>Shop by Category</h3>
+    </section>
+</body>
+</html>
