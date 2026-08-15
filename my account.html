@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topline">
+     <div><h4>🥡Free Delivery on orders above Rs. 1,499</h4></div>
+     <div class="rightline">
+        <h4>📦Fast & Fresh Delivery</h4>
+        <h4>🧧 Help Center</h4>
+        <h4>🚚 Track Order</h4>
+     </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+            <h2><i class="fa-solid fa-basket-shopping greenilog"></i>Fresh <span class="greenilog">Basket</span>
+                </h2>
+            <p style="margin-left: 31px; font-size: small;">Fresh Groceries, Delivered.</p> 
+            </div>
+           <div class="search-box">
+    <input type="text" placeholder="Search for products, categories...">
+    <button id="btn1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</div>
+            <div class="personal">
+                <p><i class="fa-regular fa-user"></i><a href="login.html">Login/</a><a href="registration.html">Register</a></p>
+                <p><i class="fa-regular fa-circle-user"></i><a href="my account.html">My Account</a></p>
+                <p><i class="fa-solid fa-cart-arrow-down"></i> <a href="my cart.html">My Cart</a></p>
+            </div>
+        </nav>
+        <hr>
+        <section class="info">
+            
+            <select name="categories" id="">
+                <option value="">Shop by Category</option>
+                <option value=""> 🥦 Fruits & Vegetables</option>
+                <option value="">🥛 Dairy & Breakfast</option>
+                <option value="">🌾 Staples & Pulses</option>
+                <option value="">🍪 Snacks & Munchies</option>
+                <option value="">🥤 Beverages</option>
+                <option value="">🧴 Personal Care</option>
+                <option value="">🧹 Household Needs</option>
+                <option value="">🥩 Meat & Seafood</option>
+                <option value="">🧊 Frozen Foods</option>
+                <option value="">🍫 Bakery & Desserts</option>
+                </select>
+      <section class="d-flex justify-content-center align-items-center gap-4 py-3 hero-sec">
+    <a href="index.html" class="text-dark text-decoration-none">Home</a>
+    <a href="category page.html" class="text-dark text-decoration-none">Categories</a>
+    <a href="" class="text-dark text-decoration-none">Offers</a>
+    <a href="#" class="text-dark text-decoration-none">Fruits & Vegetables</a>
+    <a href="#" class="text-dark text-decoration-none">Dairy</a>
+    <a href="#" class="text-dark text-decoration-none">Beverages</a>
+    <a href="#" class="text-dark text-decoration-none">Personal Care</a>
+    <a href="#" class="text-dark text-decoration-none">Household</a>
+    <a href="#" class="text-dark text-decoration-none">Contact Us</a>
+</section>   
+        </section>
+    </header>
+    <hr>
+
+    <!-- Main Account Area -->
+    <main class="account-container">
+
+        <h1>My Account</h1>
+
+        <p class="welcome">
+            Welcome back! Manage your account and orders from here.
+        </p>
+
+
+        <div class="account-layout">
+
+            <!-- Sidebar -->
+            <aside class="account-sidebar">
+
+                <div class="profile">
+
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Welcome!</h3>
+                    <p>FreshBasket Customer</p>
+
+                </div>
+
+
+                <div class="account-menu">
+
+                    <a href="#" class="active">
+                        <i class="fa-solid fa-user"></i>
+                        My Profile
+                    </a>
+
+                    <a href="my-orders.html">
+                        <i class="fa-solid fa-box"></i>
+                        My Orders
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        My Addresses
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        Wishlist
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-lock"></i>
+                        Change Password
+                    </a>
+
+                    <a href="login.html" class="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+
+                </div>
+
+            </aside>
+
+
+            <!-- Account Content -->
+            <section class="account-content">
+
+                <div class="section-title">
+                    <div>
+                        <h2>Personal Information</h2>
+                        <p>Update your personal details</p>
+                    </div>
+
+                    <button class="edit-btn">
+                        <i class="fa-solid fa-pen"></i>
+                        Edit Profile
+                    </button>
+                </div>
+
+
+                <!-- Profile Information -->
+                <div class="profile-form">
+
+                    <div class="form-group">
+
+                        <label>Full Name</label>
+
+                        <div class="input-box">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text"
+                                   value="FreshBasket Customer"
+                                   readonly>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Email Address</label>
+
+                        <div class="input-box">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email"
+                                   value="customer@example.com"
+                                   readonly>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Phone Number</label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="text"
+                                   value="+92 300 1234567"
+                                   readonly>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Address</label>
+
+                        <div class="input-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text"
+                                   value="Peshawar, Pakistan"
+                                   readonly>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Overview -->
+                <h2 class="overview-title">Account Overview</h2>
+
+                <div class="overview">
+
+                    <div class="overview-card">
+
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-box"></i>
+                        </div>
+
+                        <div>
+                            <h3>12</h3>
+                            <p>Total Orders</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <div>
+                            <h3>8</h3>
+                            <p>Wishlist Items</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h3>2</h3>
+                            <p>Saved Addresses</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Recent Order -->
+                <div class="recent-order">
+
+                    <div class="section-title">
+
+                        <div>
+                            <h2>Recent Order</h2>
+                            <p>Your latest shopping activity</p>
+                        </div>
+
+                        <a href="my-orders.html">
+                            View All Orders →
+                        </a>
+
+                    </div>
+
+
+                    <div class="order-row">
+
+                        <div class="order-info">
+
+                            <div class="order-icon">
+                                <i class="fa-solid fa-box"></i>
+                            </div>
+
+                            <div>
+                                <h3>Order #FB12345</h3>
+                                <p>15 May 2026 | 10:30 AM</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="order-status">
+                            Delivered
+                        </div>
+
+
+                        <div class="order-total">
+                            <span>Total</span>
+                            <strong>Rs. 920</strong>
+                        </div>
+
+
+                        <a href="#" class="details-btn">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+
+            <h2>
+                <i class="fa-solid fa-basket-shopping"></i>
+                Fresh<span>Basket</span>
+            </h2>
+
+            <p>Fresh Groceries, Delivered.</p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 FreshBasket. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

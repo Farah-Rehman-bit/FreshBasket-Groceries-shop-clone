@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topline">
+     <div><h4>🥡Free Delivery on orders above Rs. 1,499</h4></div>
+     <div class="rightline">
+        <h4>📦Fast & Fresh Delivery</h4>
+        <h4>🧧 Help Center</h4>
+        <h4>🚚 Track Order</h4>
+     </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+            <h2><i class="fa-solid fa-basket-shopping greenilog"></i>Fresh <span class="greenilog">Basket</span>
+                </h2>
+            <p style="margin-left: 31px; font-size: small;">Fresh Groceries, Delivered.</p> 
+            </div>
+           <div class="search-box">
+    <input type="text" placeholder="Search for products, categories...">
+    <button id="btn1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</div>
+            <div class="personal">
+                <p><i class="fa-regular fa-user"></i><a href="login.html">Login/</a><a href="registration.html">Register</a></p>
+                <p><i class="fa-regular fa-circle-user"></i>My Account</p>
+                <p><i class="fa-solid fa-cart-arrow-down"></i> <a href="my cart.html">My Cart</a></p>
+            </div>
+        </nav>
+        <hr>
+        <section class="info">
+            
+            <select name="categories" id="">
+                <option value="">Shop by Category</option>
+                <option value=""> 🥦 Fruits & Vegetables</option>
+                <option value="">🥛 Dairy & Breakfast</option>
+                <option value="">🌾 Staples & Pulses</option>
+                <option value="">🍪 Snacks & Munchies</option>
+                <option value="">🥤 Beverages</option>
+                <option value="">🧴 Personal Care</option>
+                <option value="">🧹 Household Needs</option>
+                <option value="">🥩 Meat & Seafood</option>
+                <option value="">🧊 Frozen Foods</option>
+                <option value="">🍫 Bakery & Desserts</option>
+                </select>
+      <section class="d-flex justify-content-center align-items-center gap-4 py-3 hero-sec">
+    <a href="#" class="text-dark text-decoration-none">Home</a>
+    <a href="category page.html" class="text-dark text-decoration-none">Categories</a>
+    <a href="product detail.html" class="text-dark text-decoration-none">Offers</a>
+    <a href="#" class="text-dark text-decoration-none">Fruits & Vegetables</a>
+    <a href="#" class="text-dark text-decoration-none">Dairy</a>
+    <a href="#" class="text-dark text-decoration-none">Beverages</a>
+    <a href="#" class="text-dark text-decoration-none">Personal Care</a>
+    <a href="#" class="text-dark text-decoration-none">Household</a>
+    <a href="#" class="text-dark text-decoration-none">Contact Us</a>
+</section>   
+        </section>
+    </header>
+    <hr>
+
+    <main class="orders-container">
+
+        <!-- Heading -->
+        <h1>My Orders</h1>
+
+
+        <!-- Order Tabs -->
+        <div class="order-tabs">
+
+            <a href="#" class="active">All Orders</a>
+            <a href="#">Processing</a>
+            <a href="#">Shipped</a>
+            <a href="#">Delivered</a>
+            <a href="#">Cancelled</a>
+
+        </div>
+
+
+        <!-- ================= ORDER 1 ================= -->
+
+        <div class="order-card">
+
+            <div class="order-info">
+
+                <h3>Order #FB12345</h3>
+
+                <p>15 May 2024 | 10:30 AM</p>
+
+                <div class="products">
+
+                    <img src="Fruits and Vegetables.jpg" alt="Product">
+                    <img src="APPLE-sell.png" alt="Apple">
+                    <img src="milk.png" alt="Milk">
+                    <img src="banana.png" alt="Banana">
+                    <img src="diary.png" alt="Dairy">
+                    <img src="fruite & vegitable.png" alt="Vegetables">
+
+                </div>
+
+            </div>
+
+
+            <div class="order-status delivered">
+
+                <span>
+                    <i class="fa-solid fa-circle"></i>
+                    Delivered
+                </span>
+
+            </div>
+
+
+            <div class="order-total">
+
+                <p>Total</p>
+
+                <strong>Rs. 920</strong>
+
+            </div>
+
+
+            <button class="details-btn">
+                View Details
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= ORDER 2 ================= -->
+
+        <div class="order-card">
+
+            <div class="order-info">
+
+                <h3>Order #FB12344</h3>
+
+                <p>12 May 2024 | 09:15 AM</p>
+
+                <div class="products">
+
+                    <img src="APPLE-sell.png" alt="Apple">
+                    <img src="diary.png" alt="Cheese">
+                    <img src="milk.png" alt="Milk">
+                    <img src="cucumber.png" alt="Cucumber">
+
+                </div>
+
+            </div>
+
+
+            <div class="order-status processing">
+
+                <span>
+                    <i class="fa-solid fa-circle"></i>
+                    Processing
+                </span>
+
+            </div>
+
+
+            <div class="order-total">
+
+                <p>Total</p>
+
+                <strong>Rs. 1,250</strong>
+
+            </div>
+
+
+            <button class="details-btn">
+                View Details
+            </button>
+
+        </div>
+
+
+
+        <!-- ================= ORDER 3 ================= -->
+
+        <div class="order-card">
+
+            <div class="order-info">
+
+                <h3>Order #FB12343</h3>
+
+                <p>10 May 2024 | 07:45 PM</p>
+
+                <div class="products">
+
+                    <img src="Fruits and Vegetables.jpg" alt="Vegetables">
+                    <img src="APPLE-sell.png" alt="Apple">
+                    <img src="milk.png" alt="Milk">
+                    <img src="Fruits and Vegetables.jpg" alt="Tomato">
+
+                </div>
+
+            </div>
+
+
+            <div class="order-status shipped">
+
+                <span>
+                    <i class="fa-solid fa-circle"></i>
+                    Shipped
+                </span>
+
+            </div>
+
+
+            <div class="order-total">
+
+                <p>Total</p>
+
+                <strong>Rs. 780</strong>
+
+            </div>
+
+
+            <button class="details-btn">
+                View Details
+            </button>
+
+        </div>
+
+
+        <!-- More Orders -->
+
+        <button class="more-orders">
+            View More Orders
+            <i class="fa-solid fa-arrow-down"></i>
+        </button>
+
+    </main>
+
+</body>
+</html>

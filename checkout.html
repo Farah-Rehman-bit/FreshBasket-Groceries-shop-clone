@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topline">
+     <div><h4>🥡Free Delivery on orders above Rs. 1,499</h4></div>
+     <div class="rightline">
+        <h4>📦Fast & Fresh Delivery</h4>
+        <h4>🧧 Help Center</h4>
+        <h4>🚚 Track Order</h4>
+     </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">
+            <h2><i class="fa-solid fa-basket-shopping greenilog"></i>Fresh <span class="greenilog">Basket</span>
+                </h2>
+            <p style="margin-left: 31px; font-size: small;">Fresh Groceries, Delivered.</p> 
+            </div>
+           <div class="search-box">
+    <input type="text" placeholder="Search for products, categories...">
+    <button id="btn1">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</div>
+            <div class="personal">
+                <p><i class="fa-regular fa-user"></i><a href="login.html">Login/</a><a href="registration.html">Register</a></p>
+                <p><i class="fa-regular fa-circle-user"></i><a href="my account.html">My Account</a></p>
+                <p><i class="fa-solid fa-cart-arrow-down"></i> <a href="my cart.html">My Cart</a></p>
+            </div>
+        </nav>
+        <hr>
+        <section class="info">
+            
+            <select name="categories" id="">
+                <option value="">Shop by Category</option>
+                <option value=""> 🥦 Fruits & Vegetables</option>
+                <option value="">🥛 Dairy & Breakfast</option>
+                <option value="">🌾 Staples & Pulses</option>
+                <option value="">🍪 Snacks & Munchies</option>
+                <option value="">🥤 Beverages</option>
+                <option value="">🧴 Personal Care</option>
+                <option value="">🧹 Household Needs</option>
+                <option value="">🥩 Meat & Seafood</option>
+                <option value="">🧊 Frozen Foods</option>
+                <option value="">🍫 Bakery & Desserts</option>
+                </select>
+      <section class="d-flex justify-content-center align-items-center gap-4 py-3 hero-sec">
+    <a href="#" class="text-dark text-decoration-none">Home</a>
+    <a href="category page.html" class="text-dark text-decoration-none">Categories</a>
+    <a href="" class="text-dark text-decoration-none">Offers</a>
+    <a href="#" class="text-dark text-decoration-none">Fruits & Vegetables</a>
+    <a href="#" class="text-dark text-decoration-none">Dairy</a>
+    <a href="#" class="text-dark text-decoration-none">Beverages</a>
+    <a href="#" class="text-dark text-decoration-none">Personal Care</a>
+    <a href="#" class="text-dark text-decoration-none">Household</a>
+    <a href="#" class="text-dark text-decoration-none">Contact Us</a>
+</section>   
+        </section>
+    </header>
+    <hr>
+<body>
+
+    <main class="checkout-container">
+
+        <h1 class="checkout-title">Checkout</h1>
+
+        <div class="checkout-layout">
+
+            <!-- ================= LEFT SIDE ================= -->
+            <div class="left-column">
+
+                <!-- Delivery Address -->
+                <section class="checkout-card">
+
+                    <h3 class="section-title">
+                        <span class="number-icon">1</span>
+                        Delivery Address
+                    </h3>
+
+                    <div class="address-card">
+
+                        <div class="address-top">
+                            <h4>Home</h4>
+
+                            <button class="edit-btn">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+
+                        <p>123, Green Street, Gulberg</p>
+                        <p>Lahore, Pakistan</p>
+                        <p>+92 300 1254507</p>
+
+                    </div>
+
+                    <button class="add-address">
+                        <i class="fa-solid fa-plus"></i>
+                        Add New Address
+                    </button>
+
+                </section>
+
+
+                <!-- Payment Method -->
+                <section class="checkout-card payment-card">
+
+                    <h3 class="section-title">
+                        <span class="number-icon">2</span>
+                        Payment Method
+                    </h3>
+
+
+                    <!-- Cash on Delivery -->
+                    <label class="payment-option selected">
+
+                        <div class="payment-left">
+
+                            <input type="radio"
+                                   name="payment"
+                                   checked>
+
+                            <i class="fa-solid fa-money-bill-wave"></i>
+
+                            <strong>Cash on Delivery</strong>
+
+                        </div>
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </label>
+
+
+                    <!-- Card -->
+                    <label class="payment-option">
+
+                        <div class="payment-left">
+
+                            <input type="radio"
+                                   name="payment">
+
+                            <i class="fa-regular fa-credit-card"></i>
+
+                            <strong>Credit / Debit Card</strong>
+
+                        </div>
+
+                        <div class="payment-logos">
+                            <span>VISA</span>
+                            <span>🔴</span>
+                            <span>Jazz</span>
+                        </div>
+
+                    </label>
+
+
+                    <!-- EasyPaisa -->
+                    <label class="payment-option">
+
+                        <div class="payment-left">
+
+                            <input type="radio"
+                                   name="payment">
+
+                            <i class="fa-solid fa-mobile-screen"></i>
+
+                            <strong>EasyPaisa / JazzCash</strong>
+
+                        </div>
+
+                        <div class="payment-logos">
+                            <span>Easy</span>
+                            <span>Jazz</span>
+                            <span>GPay</span>
+                        </div>
+
+                    </label>
+
+
+                    <!-- Bank Transfer -->
+                    <label class="payment-option">
+
+                        <div class="payment-left">
+
+                            <input type="radio"
+                                   name="payment">
+
+                            <i class="fa-solid fa-building-columns"></i>
+
+                            <strong>Bank Transfer</strong>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </label>
+
+                </section>
+
+            </div>
+
+
+            <!-- ================= RIGHT SIDE ================= -->
+
+            <aside class="order-summary">
+
+                <h3 class="summary-title">
+
+                    <span class="summary-icon">
+                        <i class="fa-solid fa-receipt"></i>
+                    </span>
+
+                    Order Summary
+
+                </h3>
+
+
+                <!-- Product 1 -->
+                <div class="product">
+
+                    <img src="APPLE-sell.png"
+                         alt="Fresh Red Apples">
+
+                    <div class="product-info">
+
+                        <h4>Fresh Red Apples (1 kg)</h4>
+
+                        <p>Rs. 350 / kg</p>
+
+                    </div>
+
+                    <strong>Rs. 350</strong>
+
+                </div>
+
+
+                <!-- Product 2 -->
+                <div class="product">
+
+                    <img src="banana.png"
+                         alt="Banana">
+
+                    <div class="product-info">
+
+                        <h4>Banana (1 dozen) × 2</h4>
+
+                        <p>Rs. 120 / dozen</p>
+
+                    </div>
+
+                    <strong>Rs. 240</strong>
+
+                </div>
+
+
+                <!-- Product 3 -->
+                <div class="product">
+
+                    <img src="fresh milk.png"
+                         alt="Amul Fresh Milk">
+
+                    <div class="product-info">
+
+                        <h4>Amul Fresh Milk (1 L)</h4>
+
+                        <p>Rs. 220 / L</p>
+
+                    </div>
+
+                    <strong>Rs. 220</strong>
+
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="product">
+
+                    <img src="salt.png"
+                         alt="Tata Salt">
+
+                    <div class="product-info">
+
+                        <h4>Tata Salt (1 kg)</h4>
+
+                        <p>Rs. 120 / pack</p>
+
+                    </div>
+
+                    <strong>Rs. 120</strong>
+
+                </div>
+
+
+                <!-- Price Summary -->
+                <div class="price-summary">
+
+                    <div>
+                        <span>Subtotal</span>
+                        <strong>Rs. 930</strong>
+                    </div>
+
+                    <div>
+                        <span>Delivery Charge</span>
+                        <strong>Rs. 40</strong>
+                    </div>
+
+                    <div>
+                        <span>Discount</span>
+                        <strong class="discount">- Rs. 50</strong>
+                    </div>
+
+                    <div class="total">
+
+                        <span>Total</span>
+
+                        <strong>Rs. 920</strong>
+
+                    </div>
+
+                </div>
+
+
+                <button class="place-order">
+
+                    <i class="fa-solid fa-lock"></i>
+                    <a href="order page.html">Place Order</a>
+
+                    
+
+                </button>
+
+                <p class="delivery-note">
+                    You will pay <strong>Rs. 920</strong> on delivery.
+                </p>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
